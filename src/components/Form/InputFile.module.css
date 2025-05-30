@@ -1,0 +1,26 @@
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_control label {
+    margin: .5em 0;
+    max-width: 600px;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: 0.3s ease;
+}
+
+.form_control label:hover {
+    background-color: #aee3fc;
+    color: #077ab0;
+    border-color: #077ab0;
+}
+
+.form_control input {
+    display: none;
+}

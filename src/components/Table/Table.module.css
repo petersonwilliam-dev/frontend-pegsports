@@ -1,0 +1,18 @@
+.table {
+    border: 1px solid #eee;
+    margin: 2em 0;
+    width: 50%;
+}
+
+.table th {
+    background-color: #dadada;
+    padding: .5em 1em;
+    font-weight: 500;
+    border: 1px solid #999;
+}
+
+.table td {
+    background-color: #eee;
+    padding: .5em 1em;
+    border: 1px solid #999;
+}

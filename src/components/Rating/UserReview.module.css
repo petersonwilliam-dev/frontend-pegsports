@@ -1,0 +1,53 @@
+.container_review {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    border-bottom: 1px solid #eee;
+}
+
+.container_review div {
+    margin: .5em 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user ion-icon {
+    font-size: 30px;
+}
+
+.user p {
+    margin: 0 1em;
+    font-weight: 500;
+}
+
+.empty {
+    font-size: 30px;
+    font-weight: 200;
+    color: #888;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.show_all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s; 
+}
+
+.show_all:hover {
+    font-size: 18px;
+}
+
+.show_all ion-icon {
+    margin-right: .5em;
+}

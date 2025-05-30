@@ -1,0 +1,21 @@
+.footer {
+    padding: 3em;
+    background-color: #000080;
+    text-align: center;
+    color: #FFF;
+}
+
+.footer img {
+    width: 200px;
+}
+
+.contacts {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts a {
+    color: #FFF;
+    margin: 0 .5em;
+}

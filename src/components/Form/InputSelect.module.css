@@ -1,0 +1,23 @@
+.form_control {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.form_control label {
+    margin: .5em 0;
+}
+
+.form_control select {
+    border: none;
+    outline: none;
+    padding: .5em;
+    width: 100%;
+    border: 1px solid #999;
+    font-weight: 200;
+    border-radius: 5px;
+}
+
+.form_control select option {
+    border: none;
+    font-weight: 200;
+}

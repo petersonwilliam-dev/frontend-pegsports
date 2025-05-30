@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+}
+
+.container_items {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.purchase_info {
+    width: 30%;
+    padding: 2em;
+    border: 1px solid #999;
+    border-radius: 25px;
+}
+
+.purchase_info button {
+    margin: 1em 0;
+    width: 100%;
+    padding: .5em;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #fcbd18;
+    color: #fff;
+    border: none;
+}

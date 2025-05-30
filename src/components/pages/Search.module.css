@@ -1,0 +1,31 @@
+.search {
+    display: flex;
+}
+
+.container_filters {
+    width: 25%;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid #cecece;
+}
+
+.container_filters h4 {
+    font-size: 20px;
+}
+
+.container_products {
+    margin: 0 1em;
+    width: 80%;
+}
+
+.container_search {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0;
+    min-height: 70vh;
+}
+
+.form_section {
+    margin: 1em 0;
+    border-bottom: 1px solid #cecece;
+}

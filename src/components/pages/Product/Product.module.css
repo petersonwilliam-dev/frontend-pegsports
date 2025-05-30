@@ -1,0 +1,30 @@
+.images_product {
+    overflow-y: auto;
+}
+
+.images_product img {
+    cursor: pointer;
+    margin: .5em 0;
+}
+
+.image{
+    max-width: 400px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.description, .informations {
+    border-top: 1px solid #eee;
+    padding: 2em 0;
+}
+
+.container_ratings {
+    display: flex;
+}

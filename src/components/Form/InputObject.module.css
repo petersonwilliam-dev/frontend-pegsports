@@ -1,0 +1,41 @@
+.form_control {
+    display: flex;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.title, .value {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 1em;
+}
+
+.form_control input {
+    border: none;
+    border: 1px solid #999;
+    border-radius: 10px;
+    outline: none;
+    padding: .5em;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.actions button {
+    padding: .1em;
+    margin: .2em 0;
+    border: none;
+    color: #fff;
+}
+
+.actions button.add {
+    background-color: green;
+}
+
+.actions button.remove {
+    background-color: rgb(166, 13, 13)
+}

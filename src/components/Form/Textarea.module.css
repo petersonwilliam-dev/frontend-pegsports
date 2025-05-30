@@ -1,0 +1,13 @@
+.form_control {
+    width: 100%;
+}
+
+.form_control textarea {
+    width: 100%;
+    margin: .5em 0;
+    border: 1px sold #999;
+    border-radius: 10px;
+    padding: 1em;
+    outline: none;
+    min-height: 200px;
+}

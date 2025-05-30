@@ -1,0 +1,16 @@
+.container_home {
+    padding: 1em;
+}
+.title {
+    background: #000080;
+    color: #FFF;
+    border-bottom: 5px solid #fcbd18;
+    border-top: 5px solid #fcbd18;
+    margin-bottom: 1em;
+}
+
+.sales_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

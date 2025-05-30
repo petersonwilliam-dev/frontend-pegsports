@@ -1,0 +1,9 @@
+.ratings {
+    display: flex;
+    align-items: center;
+}
+
+.ratings ion-icon {
+    color: rgb(255, 219, 18);
+    margin-right: .5em;
+}

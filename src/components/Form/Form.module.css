@@ -1,0 +1,15 @@
+.form_container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.link {
+    color: #000;
+}
+
+.form_container p a {
+    text-decoration: none;
+}
