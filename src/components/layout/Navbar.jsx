@@ -46,9 +46,13 @@ function Navbar() {
                 </li>
                 {user && (
                   <>
-                    {user.permission && (
+                    {user.permission ? (
                       <li>
                         <Link to="/dashboard" className={styles.link_cart}>Painel</Link>
+                      </li>
+                    ): (
+                      <li>
+                        <Link to="/profile" className={styles.link_cart}>Minha conta</Link>
                       </li>
                     )}
                   </>

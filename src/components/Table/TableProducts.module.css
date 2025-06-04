@@ -1,0 +1,32 @@
+.table_products {
+    border: 1px solid #000;
+    margin: 1em 0;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.table_products thead {
+    justify-content: space-between;
+    background-color: #ccc;
+}
+
+.table_products th, td {
+    border: 1px solid #000;
+    padding: .5em;
+}
+
+.table_products .edit, .delete {
+    margin: .1em .2em;
+    padding: .2em;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.edit {
+    background-color: #077ab0;
+}
+
+.delete {
+    background-color: #d72009;
+}

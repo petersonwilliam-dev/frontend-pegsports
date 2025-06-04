@@ -1,0 +1,29 @@
+.flash_message {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+
+.flash_message p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.flash_message ion-icon {
+    margin-right: .5em;
+    font-size: 20px;
+}
+
+.success {
+    background-color:#2eaf4a;
+    color: #fff;
+}
+
+.error {
+    background-color: #ff2c2c;
+    color: #fff;
+}

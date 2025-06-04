@@ -26,7 +26,7 @@ function Dashboard() {
             <div className={styles.menu}>
                 <Link to="/dashboard/product/add">Adicionar produto</Link>
                 <Link>Ver vendas</Link>
-                <Link>Procurar produto</Link>
+                <Link to="/dashboard/product/table">Procurar produto</Link>
             </div>
             <div className={styles.container}>
                 <Outlet />

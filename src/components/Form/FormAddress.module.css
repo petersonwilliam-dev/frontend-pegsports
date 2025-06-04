@@ -1,0 +1,16 @@
+.container_form {
+    margin: 1.5em 0;
+}
+
+.form_control {
+    margin: 1em 0;
+}
+
+.form_control input {
+    width: 100%;
+    padding: .5em;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    font-weight: 200;
+}
