@@ -42,9 +42,9 @@ function Address() {
             <div className={styles.container_form_address}>
                 <h4>{addressForm ? "Editar endereço" : "Adicionar endereço"}</h4>
                 {addressForm ? (
-                    <FormAddress addressData={addressForm} handleSubmit={editAddress}/>
+                    <FormAddress addressData={addressForm} handleSubmit={editAddress} btnText="Editar" />
                 ) : (
-                    <FormAddress handleSubmit={addAddress}/>
+                    <FormAddress handleSubmit={addAddress} btnText="Cadastrar" />
                 )}
             </div>
         </div>

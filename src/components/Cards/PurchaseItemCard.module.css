@@ -1,0 +1,65 @@
+.card {
+    display: flex;
+    padding: .5em;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.card img {
+    width: 100px;
+}
+
+.info {
+    width: 100%;
+    margin-left: 1.5em;
+}
+
+.span {
+    background-color: #dadada;
+    display: inline-block;
+    padding: .5em 1em;
+    margin: .4em 0;
+    border-radius: 10px;
+}
+
+.span span {
+    font-weight: 500;
+}
+
+.quantity {
+    margin: .5em 0;
+    display: flex;
+}
+
+.quantity button {
+    padding: .2em .5em;
+    border: 1px solid #000080;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.quantity button:disabled {
+    background-color: #dedede;
+    color: #999;
+    border-color: #999;
+}
+
+.quantity p {
+    margin: 0 1em;
+    color: #000080;
+    display: flex;
+    align-items: center;
+}
+
+.remove {
+    padding: .5em;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: red;
+    display: flex;
+}
+
+.remove ion-icon {
+    font-size: 20px;
+}

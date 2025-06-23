@@ -12,6 +12,7 @@ function ProductInfo({product}) {
     const {cart, addItemToCart, removeItemToCart} = useContext(CartContext)
     const [viewAddToCart, setViewAddToCart] = useState(false)
     const [quantity, setQuantity] = useState(1)
+    const [indexAvailableQuantity, setIndexAvailableQuantity] = useState(0)
     const navigate = useNavigate()
 
     function addToCart() {
@@ -19,7 +20,11 @@ function ProductInfo({product}) {
         setViewAddToCart(false)
     }
 
-    const [indexAvailableQuantity, setIndexAvailableQuantity] = useState(0)
+    function goToBuy() {
+        navigate("/buy", {state: {
+            productsPurchaseIntention: [{item: product, quantity, size: product.available[indexAvailableQuantity].size}]
+        }})
+    }
 
     return (
         <div className={`d-flex flex-column ${styles.product_info}`}>
@@ -44,7 +49,7 @@ function ProductInfo({product}) {
             </div>
             <p>Vendido e entregue por PEG Sports</p>
             <div className={styles.purchase_options}>
-                <a href='#'><ion-icon name="bag-check" style={{marginRight: '.5em'}}></ion-icon> Comprar</a>
+                <button onClick={goToBuy} className={styles.buy}><ion-icon name="bag-check" style={{marginRight: '.5em'}}></ion-icon> Comprar</button>
                 {cart ? (
                     <>
                         {cart.products.some(item => item.item._id === product._id) ? (

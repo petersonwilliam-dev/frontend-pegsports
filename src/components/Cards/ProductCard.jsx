@@ -1,10 +1,18 @@
 import { getRatingMean } from '../../utils/calcRating'
+import useFreight from '../../hooks/useFreight'
 
 // CSS
 import styles from './ProductCard.module.css'
 import RatingsProduct from "../Rating/RatingsProduct"
+import { useEffect } from 'react'
 
 function CardProduct({product}) {
+
+    const { getFreight } = useFreight()
+
+    useEffect(() => {
+        getFreight('01001000', '58297000', product)
+    }, [])
     
     return (
         <>

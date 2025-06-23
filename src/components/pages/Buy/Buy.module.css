@@ -1,0 +1,166 @@
+p {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: .5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.purchase_details {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.select, .review_products {
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #999;
+    margin-bottom: 1.5em;
+}
+
+.select .selected {
+    background-color: #999;
+}
+
+
+.address {
+    font-weight: 200;
+    display: flex;
+    max-width: 600px;
+}
+
+.address span {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.address ion-icon {
+    font-size: 20px;
+}
+
+.address > div {
+    margin: 0 .2em;
+}
+
+.change_address {
+    width: 100%;
+    text-align: end;
+}
+
+.change_address a {
+    margin: 0 .5em;
+    color: #1577cc;
+    cursor: pointer;
+}
+
+.select_item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.select_item input {
+    font-size: 20px;
+}
+
+.select_item input {
+    opacity: 0;
+    z-index: 10;
+}
+
+.check_mark {
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check_mark ion-icon {
+    color: #fff;
+}
+
+.select_item input:checked ~ .check_mark {
+    background-color: #000080;
+}
+
+.container_method p, .container_method span {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.container_method span {
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.container_method img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.container_method {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.container_finish_buy {
+    width: 30%;
+    margin: 1em;
+    padding: .5em;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+.finish_buy {
+    padding: 1em;
+    border-bottom: 1px solid #999;
+}
+
+.finish_buy p {
+    margin: .1em 0;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.finish_buy .total p {
+    font-weight: 500;
+    margin: .2em 0;
+    font-size: 19px;
+}
+
+.conclude_buy {
+    margin: 1em 0;
+    padding: .5em 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcbd18;
+    color: #fff;
+}
+
+.add_card {
+    font-size: 15px;
+    padding: .3em 2em;
+    margin: 0 3em;
+    border: none;
+    border-radius: 5px;
+    background-color: #000080;
+    color: #fff;
+}

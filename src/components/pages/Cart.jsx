@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from "react"
+import { useNavigate } from "react-router-dom"
 
 import { CartContext } from "../../context/CartContext"
 
@@ -8,19 +9,29 @@ import styles from './Cart.module.css'
 
 function Cart() {
 
-    const {cart, removeItemToCart} = useContext(CartContext)
+
+    const {cart} = useContext(CartContext)
     const [maxValue, setMaxValue] = useState(0)
     const [purchaseItems, setPurchaseItems] = useState([])
     const [observerSetQuantity, setObserverSetQuantity] = useState(false)
 
+    const navigate = useNavigate()
+
+    console.log(purchaseItems)
+
     useEffect(() => {
-        console.log(purchaseItems)
         let value = 0
         purchaseItems.map(item => {
             value += (item.item.price * item.quantity)    
         })
         setMaxValue(value)
     }, [purchaseItems, observerSetQuantity])
+
+    function gotoBuy() {
+        navigate("/buy", {state: {
+            productsPurchaseIntention: purchaseItems
+        }})
+    }
 
     return (
         <section>
@@ -38,7 +49,7 @@ function Cart() {
                     <div className={styles.purchase_info}>
                         <h3>Subtotal {purchaseItems.length > 0 && (<span>({purchaseItems.length} produtos)</span>)}</h3>
                         <h4>{new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(maxValue)}</h4>
-                        <button>Finalizar pedido</button>
+                        <button onClick={gotoBuy}>Finalizar pedido</button>
                     </div>
                 </div>
             )}

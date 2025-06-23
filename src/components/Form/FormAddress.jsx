@@ -4,7 +4,7 @@ import axios from 'axios'
 import styles from './FormAddress.module.css'
 import { useEffect, useState } from 'react'
 
-function FormAddress({addressData, handleSubmit}) {
+function FormAddress({addressData, handleSubmit, btnText}) {
 
     const [address, setAddress] = useState(addressData || {})
 
@@ -89,7 +89,7 @@ function FormAddress({addressData, handleSubmit}) {
                         <label htmlFor="reference">Referência</label>
                         <input name="reference" type="text" value={address.reference || ''} onChange={handleOnChange} />
                     </div>
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit">{btnText}</button>
                 </form>
         </div>
     )
